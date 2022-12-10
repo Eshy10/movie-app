@@ -8,3 +8,10 @@
   background: #000000;
   border-radius: 12px;
 }
+
+@media screen and (max-width: 425px) {
+    .card__wrapper {
+        width: 200px;
+        height: 200px;
+      }
+  }
