@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-invalid-void-type */
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { MoviesProps } from './types';
 
 // Define a service using a base URL and expected endpoints
 export const movieApi = createApi({
@@ -8,10 +9,10 @@ export const movieApi = createApi({
 		baseUrl: 'http://www.omdbapi.com/?i=tt3896198&apikey=f4d1759b'
 	}),
 	endpoints: (builder) => ({
-		getAllMovies: builder.query<any[], void>({
-			query: () => '/',
+		getAllMovies: builder.query<MoviesProps, void>({
+			query: () => '',
 		}),
-		getMovieByname: builder.query<any[], string>({
+		getMovieByname: builder.query<MoviesProps, string>({
 			query: (movie) => `http://www.omdbapi.com/?s=${movie}&apikey=f4d1759b`,
 		}),
 	}),
