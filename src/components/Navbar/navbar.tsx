@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav>
-        <div>
-            <h1>My Test App</h1>
-        </div>
+    <nav className={styles["nav"]}>
+        <p className={styles["nav__title"]}>MyTest App</p>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;

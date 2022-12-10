@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import styles from "./header.module.css";
 
-const index = () => {
+const Header = () => {
   return (
-    <div>index</div>
-  )
-}
+    <div className={styles["header"]}>
+      <p>Watch something incredible.</p>
+    </div>
+  );
+};
 
-export default index
+export default Header;

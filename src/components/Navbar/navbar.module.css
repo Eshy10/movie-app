@@ -1,0 +1,14 @@
+.nav {
+    background-color: #292929;
+    height: 40px;
+    padding: 2rem 2.5rem;
+}
+
+.nav__title {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    padding: 0.5rem;
+}

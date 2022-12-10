@@ -1,9 +1,25 @@
-import React from 'react'
+import { useState } from "react";
+import styles from './search.module.css';
 
 const Search = () => {
-  return (
-    <div>Search</div>
-  )
-}
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
-export default Search
+  return (
+    <div className={styles['search']}>
+      <label htmlFor="search-field">Search</label>
+      <div>
+        <input
+          name="search-field"
+          autoComplete="off"
+          id="search-field"
+          placeholder="Search"
+          type="search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Search;

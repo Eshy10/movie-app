@@ -1,0 +1,10 @@
+.search {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
